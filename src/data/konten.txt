@@ -1,0 +1,30 @@
+content 1= Sebuah standar internasional yang dirancang untuk membantu organisasi membangun, menjalankan, meninjau, memelihara, dan meningkatkan Sistem Manajemen Anti-Penyuapan (SMAP).
+ISO 37001 menjalankan praktik pengendalian anti-penyuapan, yang kemudian akan meningkatkan kemungkinan deteksi penyuapan dan mengurangi insiden penyuapan. 
+
+
+
+Question and Answer :
+
+question 1 = Apakah manfaat dari implementasi SMAP ISO 37001:2016?
+answer 1 = 
+    Dengan menerapkan SMAP dapat meningkatkan reputasi organisasi khususnya terhadap komitmen anti-penyuapan termasuk dalam upaya mengidentifikasi, mencegah dan mengatasi tindak penyuapan.
+Organisasi yang tersertifikasi ISO 37001:2016 dapat memperlihatkan komitmen terhadap kebijakan dan peraturan perundangan yang terkait dengan anti-penyuapan.
+
+Pendekatan Plan-Do-Act-Check (PDCA) dan risk-based thinking akan menciptakan kerangka berpikir Organisasi untuk terus berkembang. 
+
+question 2 = Apa Pentingnya SIMPK?
+answer 2 =
+Transparansi dan Akuntabilitas: SIMPK adalah sistem digital yang dirancang untuk meningkatkan transparansi dan akuntabilitas dalam pengadaan barang dan jasa pemerintah.
+Efisiensi: Sistem ini mempermudah pemantauan dan pengelolaan alat secara terintegrasi, yang diharapkan mempercepat proses tender. 
+
+question 3 = Bagaimana Tahapan Audit?
+answer 3 = 
+Audit umumnya meliputi empat tahap utama: 
+    1. Penerimaan Perikatan Audit: Memahami dan menyetujui ruang lingkup pekerjaan.
+    2. Perencanaan Audit: Merancang strategi audit untuk mencapai tujuan.
+    3. Pelaksanaan Pengujian Audit: Mengumpulkan bukti audit untuk mendukung opini.
+    4. Pelaporan Audit: Menyusun laporan auditor tertulis yang berisi opini. 
+
+
+question 4 = Berapa Biaya Jasa Konsultan?
+answer 4 = Hubungi kami untuk konsultasi gratis dan penawaran harga yang kompetitif.

@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteContent } from "../data/content";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
   // Handle scroll effect for shadow
   useEffect(() => {
@@ -47,8 +50,8 @@ const Header = () => {
         <div className="flex justify-between items-center h-20 lg:h-28">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <button
-              onClick={() => scrollToSection("#hero")}
+            <Link
+              to="/"
               className="hover:opacity-80 transition-opacity"
             >
               <img
@@ -56,19 +59,29 @@ const Header = () => {
                 alt={siteContent.company.name}
                 className="h-14 lg:h-20 w-auto"
               />
-            </button>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <button
-                key={link.href}
-                onClick={() => scrollToSection(link.href)}
-                className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
-              >
-                {link.label}
-              </button>
+              isHomePage ? (
+                <button
+                  key={link.href}
+                  onClick={() => scrollToSection(link.href)}
+                  className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                >
+                  {link.label}
+                </button>
+              ) : (
+                <Link
+                  key={link.href}
+                  to={`/${link.href}`}
+                  className="text-gray-700 hover:text-blue-600 transition-colors font-medium"
+                >
+                  {link.label}
+                </Link>
+              )
             ))}
           </nav>
 
@@ -112,16 +125,32 @@ const Header = () => {
           >
             <nav className="flex flex-col p-6 space-y-4">
               {navLinks.map((link, index) => (
-                <motion.button
-                  key={link.href}
-                  initial={{ opacity: 0, x: 20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                  onClick={() => scrollToSection(link.href)}
-                  className="text-left text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 rounded-lg hover:bg-gray-50"
-                >
-                  {link.label}
-                </motion.button>
+                isHomePage ? (
+                  <motion.button
+                    key={link.href}
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                    onClick={() => scrollToSection(link.href)}
+                    className="text-left text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 rounded-lg hover:bg-gray-50"
+                  >
+                    {link.label}
+                  </motion.button>
+                ) : (
+                  <motion.div
+                    key={link.href}
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                  >
+                    <Link
+                      to={`/${link.href}`}
+                      className="block text-left text-gray-700 hover:text-blue-600 transition-colors font-medium py-2 px-4 rounded-lg hover:bg-gray-50"
+                    >
+                      {link.label}
+                    </Link>
+                  </motion.div>
+                )
               ))}
             </nav>
           </motion.div>

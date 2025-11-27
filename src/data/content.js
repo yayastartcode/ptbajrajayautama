@@ -1,4 +1,6 @@
 // Website content dalam Bahasa Indonesia
+import serviceDetailsData from './serviceDetails.json';
+
 export const siteContent = {
   company: {
     name: "PT Bajra Jaya Konstruksi",
@@ -106,6 +108,9 @@ export const siteContent = {
       },
     ],
   },
+
+  // Service details now loaded from separate JSON file for easier editing
+  serviceDetails: serviceDetailsData,
 
   quotation: {
     title: "Request Quotation",
