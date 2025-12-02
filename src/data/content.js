@@ -1,5 +1,5 @@
 // Website content dalam Bahasa Indonesia
-import serviceDetailsData from './serviceDetails.json';
+import serviceDetailsData from "./serviceDetails.json";
 
 export const siteContent = {
   company: {
@@ -13,7 +13,7 @@ export const siteContent = {
     subtitle: "Partner Konsultan Bisnis dan Perizinan Terbaik di Indonesia.",
     ctaText: "Konsultasi Gratis",
     ctaLink: "#quotation",
-    heroImage: "/images/hero.png",
+    heroImage: "/images/hr2.png",
     backgroundImage: "/images/herobg.jpg",
   },
 
@@ -21,7 +21,7 @@ export const siteContent = {
     title: "Tentang Kami",
     description:
       "PT Bajra Jaya Konstruksi dibentuk oleh tim profesional yang berpengalaman dan berdedikasi untuk membantu para pelaku usaha melewati setiap tahap proses perizinan agar lebih efisien dan tanpa stres. Dengan pengalaman kami lebih dari 10 tahun, dan kami selalu update tentang aturan dan persyaratan hukum, PT Bajra Jaya Konstruksi juga siap mendukung Anda dalam bidang konstruksi bangunan dan kami bisa diandalkan.",
-    image: "/images/abt.jpg",
+    image: "/images/csa.jpg",
     stats: [
       { label: "Tahun Pengalaman", value: "10+" },
       { label: "Klien Puas", value: "500+" },
